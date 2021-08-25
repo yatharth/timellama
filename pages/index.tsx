@@ -18,6 +18,8 @@ import {fonts} from "../lib/fonts";
 // TODO: look into fronting with Cloudflare
 // TODO: link to igfonts.io for more fonts
 // TOOD: link to icanhaz memes
+// TODO: add a jump to "what’s this?”
+// TODO: add quick jumps
 
 
 const Index: NextPage = () => {
@@ -52,9 +54,10 @@ const Index: NextPage = () => {
                                         </label>
                                     </div>
                                     <div className='level-item'>
-                                        <CopyToClipboard text={font.converter(inputText)}
+                                        <CopyToClipboard
+                                            text={font.converter(inputText)}
                                                          onCopy={onCopy}>
-                                            <button className='button is-small'>Copy to Clipboard</button>
+                                            <button className='button is-small' disabled={!inputText}>Copy to Clipboard</button>
                                         </CopyToClipboard>
                                     </div>
                                 </div>
