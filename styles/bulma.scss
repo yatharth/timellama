@@ -1,0 +1,44 @@
+
+// Keep only mobile and desktop breakpoints.
+$tablet-enabled: false;
+$widescreen-enabled: false;
+$fullhd-enabled: false;
+
+// Import a Google Font
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+
+// Set your brand colors
+$purple: #8A4D76;
+$pink: #FA7C91;
+$brown: #757763;
+$beige-light: #D0D1CD;
+$beige-lighter: #EFF0EB;
+$beige: scale-color($beige-light, $lightness: -70%);
+
+// Update Bulma's global variables
+//$family-sans-serif: "Nunito", sans-serif;
+$grey-dark: $brown;
+$grey-light: $beige-light;
+$primary: $purple;
+$link: $beige;
+
+$footer-background-color: scale-color($beige-light, $lightness: -0%, $saturation: -50%);
+$footer-color: true;
+
+$link-background-color: rgba(0, 0, 0, 5%);
+$link-background-color-hover: scale-color($link-background-color, $alpha: 15%);
+
+a {
+  background-color: $link-background-color;
+}
+a:hover {
+  background-color: $link-background-color-hover;
+}
+
+// Update some of Bulma's component variables
+$body-background-color: $beige-lighter;
+$control-border-width: 2px;
+$input-border-color: transparent;
+$input-shadow: none;
+
+@import "../node_modules/bulma/bulma.sass";

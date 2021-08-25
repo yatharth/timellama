@@ -1,0 +1,48 @@
+// Remove default margins and padding.
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+
+// Disable margin collapsing. */
+// Not the best solution, as might create scrollbars, instead of overflow: visible.
+// Also, it may apply unexpectedly to third-party components not in iframes; yeesh.
+// source: https://stackoverflow.com/a/19719427/1292652
+
+//* {
+//  overflow: auto;
+//}
+
+
+// CSS is dumb and doesn’t count padding in width by default.
+// source: https://www.paulirish.com/2012/box-sizing-border-box-ftw/
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+// Aesthetic fonts and stuff.
+// delete?
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+
+// Unstyle elements à la reset.js.
+// delete?
+
+// a {
+//  color: inherit;
+//  text-decoration: none;
+//}
+
