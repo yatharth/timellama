@@ -83,7 +83,7 @@ const Index: NextPage = () => {
                     <div className='card-content'>
                         <div className="block title is-5 mb-3">
                             <Link href='/'><a className='is-underlined'>
-                                <span className='has-text-weight-bold'>canihazfonts</span>
+                                <span className='has-text-weight-bold'>icanhazfonts</span>
                                 <span className='has-text-weight-normal'>.vercel.app</span>
                             </a></Link>
                         </div>
@@ -101,7 +101,7 @@ const Index: NextPage = () => {
         <footer className='footer py-6 mt-6'>
             <div className='content has-text-centered'>
                 <p>
-                    <strong>canihazfonts</strong> by <a href='https://yatharth.io'>Yatharth Agarwal</a>.
+                    <strong>icanhazfonts</strong> by <a href='https://yatharth.io'>Yatharth Agarwal</a>.
                 </p>
                 <p>
                     The source code is licensed <a href='http://opensource.org/licenses/mit-license.php'>MIT</a>.<br/>
