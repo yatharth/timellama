@@ -7,11 +7,15 @@ body {
 }
 
 
-// Disable margin collapsing. */
+// Disable margin collapsing.
 // Not the best solution, as might create scrollbars, instead of overflow: visible.
 // Also, it may apply unexpectedly to third-party components not in iframes; yeesh.
 // source: https://stackoverflow.com/a/19719427/1292652
-
+// Update: You know, I’m coming to think margin collapsing may not be so bad after all...
+// E.g., it helps me make sure there’s 6 units of space between an element and the previous one,
+//  regardless of if the previous element had some (smaller) amount of margin space at its bottom.
+// Commenting this section out for now.
+//
 //* {
 //  overflow: auto;
 //}
@@ -27,22 +31,3 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
-
-
-// Aesthetic fonts and stuff.
-// delete?
-
-body {
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-
-// Unstyle elements à la reset.js.
-// delete?
-
-// a {
-//  color: inherit;
-//  text-decoration: none;
-//}
-
