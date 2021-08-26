@@ -25,6 +25,7 @@ import {fonts} from "../lib/fonts";
 const Index: NextPage = () => {
 
     const [inputText, setInputText] = useState("");
+    const isInputEmpty = !inputText;
 
     const onCopy = (copiedText: string, wasSuccess: boolean) => {
         toast({
@@ -57,7 +58,7 @@ const Index: NextPage = () => {
                                     </div>
                                     <div className='level-item'>
                                         <CopyToClipboard text={font.converter(inputText)} onCopy={onCopy}>
-                                            <button className='button is-small' disabled={!inputText}>
+                                            <button className='button is-small' disabled={isInputEmpty}>
                                                 Copy to Clipboard
                                             </button>
                                         </CopyToClipboard>
@@ -65,12 +66,12 @@ const Index: NextPage = () => {
                                 </div>
                             </div>
                             <div className='control'>
-                                <TextareaAutosize minRows={1} className='textarea foo'
-                                    // disabled={true}
-                                    //  contentEditable={false} suppressContentEditableWarning={true}
+                                <TextareaAutosize minRows={1} className='textarea'
                                                   readOnly={true}
                                                   placeholder={"Modified text will show up here"}
-                                                  value={font.converter(inputText)}/>
+                                                  value={font.converter(inputText)}
+                                    //  contentEditable={false} suppressContentEditableWarning={true}
+                                />
                             </div>
                         </div>
                     )}
@@ -120,11 +121,18 @@ const Index: NextPage = () => {
             // Bulma sets the min-height of textarea to 8rem by default. This is too much!
             // If I set minRows to 1 or 2 in TextareaAutosize, it will never get that small, because of the min-height set in CSS by Bulma.
             // So I override that min-height and set my own.
-            // Theoretically, it should have been fine to just set it to 1px or something, but sadly, TextareaAutosize
-            //  has an issue with sizing the textarea correctly when the value is empty.
-            // So instead, I set it to 3rem, which by manually playing around, I found looked close enough to 1 row of text.. 
+            // It should have been fine to just set it to 1px or something.
+            // However, TextareaAutosize has an issue with sizing the textarea correctly when the value is empty.
+            // It shows scrollbars and doesn’t set it to be tall enough.
+            // So instead, I set the min-height 3rem, which by manually playing I found looks close enough to 1 row of text.
+            // This still showed scroll bars on Android, so I somewhat hackily disable them only if the value is empty.
+            // I think a better alternative might be to style the ::placeholder pseudo-element as overflow: hidden or overflow:visible,
+            //  because I think what’s going on is the height of the placeholder text is incorrectly calculated as too high.
+            // However, the initial height on the textarea set by TextareaAutosize is still way smaller than I thought it would be
+            //  with minRows=1, so the min-height: 3rem would still be necessary, and overall, it doesn’t matter too much.
             div :global(textarea) {
                 min-height: 3rem !important;
+                overflow: ${isInputEmpty ? 'hidden' : 'auto'};
             }
         `}</style>
 
