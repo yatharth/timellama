@@ -117,10 +117,14 @@ const Index: NextPage = () => {
         </footer>
 
         <style jsx>{`
-            // We need the :global() as the styled-jsx won’t scope properly to the TextareaAutosize elements. The parent div gets scoped properly though. 
-            // We set the min-height to a tiny number, so the minRows attribute of TextareaAutoresize can take over, without the min-height set by Bulma of 8rem or so intefering. 
+            // Bulma sets the min-height of textarea to 8rem by default. This is too much!
+            // If I set minRows to 1 or 2 in TextareaAutosize, it will never get that small, because of the min-height set in CSS by Bulma.
+            // So I override that min-height and set my own.
+            // Theoretically, it should have been fine to just set it to 1px or something, but sadly, TextareaAutosize
+            //  has an issue with sizing the textarea correctly when the value is empty.
+            // So instead, I set it to 3rem, which by manually playing around, I found looked close enough to 1 row of text.. 
             div :global(textarea) {
-                min-height: 1rem !important;
+                min-height: 3rem !important;
             }
         `}</style>
 
