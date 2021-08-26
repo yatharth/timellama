@@ -9,17 +9,18 @@ import MaxWidthLayout from '../components/MaxWidthLayout'
 import {fonts} from "../lib/fonts";
 
 
-// TODO: use next.js layout functionality?
-// TODO: consider cheapest domains?
-// TODO: allow contentEditable, but have onChange rerun converters!
-// TODO: consider using Container class from Bulma
-// TODO: make editing functionality work lol
-// TODO: look into title, header, etc.
-// TODO: look into fronting with Cloudflare
-// TODO: link to igfonts.io for more fonts
-// TOOD: link to icanhaz memes
-// TODO: add a jump to "what’s this?”
-// TODO: add quick jumps
+// TODO: Look into <head> things like title, header, etc.
+// TODO: Consider using Bulma’s Container class instead of MaxWidthLayout
+// TODO: Consider using Next.js’s layout functionality?
+// TODO: Consider adding another page, just to see how prefetching and instant navigation works.
+// TODO: Consider buying the cheapest domain possible? And fronting with Cloudflare, and configuring on Vercel.
+// TODO: Consider allowing editing from within converted fields? Meh, not much value add. And creating decoder function for two-way functionality would be too hard.
+// TODO: Link to igfonts.io for more fonts.
+// TOOD: Link to icanhazcheezburger memes.
+// TODO: Consider adding a jump under input text called "what’s this?” to the explanatory card.
+// TODO: Consider adding quick jumps to all the font styles.
+// TODO: Use ✍️ emoji as favicon instead of the wand.
+// TODO: Update bulma-toast onces my PRs are merged
 
 
 const Index: NextPage = () => {
