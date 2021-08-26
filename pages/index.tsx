@@ -10,18 +10,21 @@ import MaxWidthLayout from '../components/MaxWidthLayout'
 import {fonts} from "../lib/fonts";
 
 
-// TODO: Look into <head> things like title, header, etc.
-// TODO: Consider using Bulma’s Container class instead of MaxWidthLayout
-// TODO: Consider using Next.js’s layout functionality?
-// TODO: Consider adding another page, just to see how prefetching and instant navigation works.
-// TODO: Consider buying the cheapest domain possible? And fronting with Cloudflare, and configuring on Vercel.
-// TODO: Consider allowing editing from within converted fields? Meh, not much value add. And creating decoder function for two-way functionality would be too hard.
-// TODO: Link to igfonts.io for more fonts.
-// TOOD: Link to icanhazcheezburger memes.
-// TODO: Consider adding a jump under input text called "what’s this?” to the explanatory card.
-// TODO: Consider adding quick jumps to all the font styles.
-// TODO: Use ✍️ emoji as favicon instead of the wand.
-// TODO: Update bulma-toast onces my PRs are merged
+// MAYBE IN FUTURE PROJECTS:
+// - TODO: Consider using Next.js’s _app.js layout functionality? Only makes sense when I have multiple pages.
+// - TODO: Consider adding another page, just to see how prefetching and instant navigation works.
+// - TODO: Consider buying the cheapest domain possible? And fronting with Cloudflare, and configuring on Vercel.
+
+// STILL MIGHT DO SOMETIME:
+// - TODO: Update reference to bulma-toast onces my PRs are merged.
+
+// REJECTED FOR MINIMAL ROI
+// - TODO: Link to igfonts.io for more fonts.
+// - TOOD: Link to icanhazcheezburger memes.
+// - TODO: Consider allowing editing from within converted fields? Meh, not much value add. And creating decoder function for two-way functionality would be too hard.
+// - TODO: Consider adding a tag under input text called "what’s this?” that jumps to the explanatory card.
+// - TODO: Consider adding quick jumps to all the font styles right below input field..
+// - TODO: Use ✍️ emoji as favicon instead of the wand.
 
 
 const Index: NextPage = () => {
