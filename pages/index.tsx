@@ -35,8 +35,10 @@ const Index: NextPage = () => {
     };
 
     return <>
+
         <div className='py-6 px-5'>
-            <div className='container' style={{maxWidth: '30rem'}}>
+            <MaxWidthLayout maxWidth='30rem'>
+
 
                 <div className='mb-6'>
                     <TextareaAutosize autoFocus minRows={3} className={'textarea'} placeholder={"Add text here"}
@@ -94,7 +96,7 @@ const Index: NextPage = () => {
                     </div>
                 </div>
 
-            </div>
+            </MaxWidthLayout>
         </div>
 
         <footer className='footer py-6 px-4 mt-6'>

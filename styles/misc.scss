@@ -21,7 +21,8 @@ body {
 //}
 
 
-// CSS is dumb and doesn’t count padding in width by default.
+// CSS is dumb and doesn’t count padding and border in width by default.
+// Be aware that this does change how things like third-party components will look.
 // source: https://www.paulirish.com/2012/box-sizing-border-box-ftw/
 
 html {
