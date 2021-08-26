@@ -3,6 +3,7 @@ import {useState} from 'react'
 import {CopyToClipboard} from 'react-copy-to-clipboard'
 import {toast} from 'bulma-toast'
 import TextareaAutosize from 'react-textarea-autosize'
+import Head from 'next/head';
 import Link from 'next/link'
 
 import MaxWidthLayout from '../components/MaxWidthLayout'
@@ -37,6 +38,12 @@ const Index: NextPage = () => {
     };
 
     return <>
+
+        <Head>
+            <title>icanhazfonts</title>
+            <meta name='description' content="Convert text into 𝘪𝘵𝘢𝘭𝘪𝘤𝘴, 𝗯𝗼𝗹𝗱, and other 𝕗𝕒𝕟𝕔𝕪 Unicode letters to use on
+                            Twitter, Instagram, and other places." />
+        </Head>
 
         <div className='py-6 px-5'>
             <MaxWidthLayout maxWidth='30rem'>
@@ -79,11 +86,6 @@ const Index: NextPage = () => {
                 </div>
 
                 <div className='card mt-6'>
-                    <div className='card-header'>
-                        {/*<div className="card-header-title">*/}
-
-                        {/*</div>*/}
-                    </div>
                     <div className='card-content'>
                         <div className="block title is-5 mb-3">
                             <Link href='/'><a className='is-underlined'>
