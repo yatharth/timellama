@@ -35,8 +35,8 @@ const Index: NextPage = () => {
     };
 
     return <>
-        <MaxWidthLayout>
-            <div className='py-6'>
+        <div className='py-6 px-5'>
+            <div className='container' style={{maxWidth: '30rem'}}>
 
                 <div className='mb-6'>
                     <TextareaAutosize autoFocus minRows={3} className={'textarea'} placeholder={"Add text here"}
@@ -95,10 +95,9 @@ const Index: NextPage = () => {
                 </div>
 
             </div>
+        </div>
 
-        </MaxWidthLayout>
-
-        <footer className='footer py-6 mt-6'>
+        <footer className='footer py-6 px-4 mt-6'>
             <div className='content has-text-centered'>
                 <p>
                     <strong>icanhazfonts</strong> by <a href='https://yatharth.io'>Yatharth Agarwal</a>.
