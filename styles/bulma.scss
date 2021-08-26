@@ -1,13 +1,8 @@
+// Style font.
+// @import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+// $family-sans-serif: "Nunito", sans-serif;
 
-// Keep only mobile and desktop breakpoints.
-$tablet-enabled: false;
-$widescreen-enabled: false;
-$fullhd-enabled: false;
-
-// Import a Google Font
-@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
-
-// Set your brand colors
+// Define colours.
 $purple: #8A4D76;
 $pink: #FA7C91;
 $brown: #757763;
@@ -15,30 +10,41 @@ $beige-light: #D0D1CD;
 $beige-lighter: #EFF0EB;
 $beige: scale-color($beige-light, $lightness: -70%);
 
-// Update Bulma's global variables
-//$family-sans-serif: "Nunito", sans-serif;
+// Style theme colours.
 $grey-dark: $brown;
 $grey-light: $beige-light;
 $primary: $purple;
 $link: $beige;
 
-$footer-background-color: scale-color($beige-light, $lightness: -0%, $saturation: -50%);
-$footer-color: true;
 
+// Style links.
 $link-background-color: rgba(0, 0, 0, 5%);
 $link-background-color-hover: scale-color($link-background-color, $alpha: 15%);
 
 a {
   background-color: $link-background-color;
 }
+
 a:hover {
   background-color: $link-background-color-hover;
 }
 
-// Update some of Bulma's component variables
+// Style main body.
 $body-background-color: $beige-lighter;
+
+// Keep only mobile and desktop breakpoints.
+//$tablet-enabled: false;
+//$widescreen-enabled: false;
+//$fullhd-enabled: false;
+
+// Style footer.
+$footer-background-color: scale-color($beige-light, $lightness: -0%, $saturation: -50%);
+$footer-color: true;
+
+// Style form inputs.
 $control-border-width: 2px;
 $input-border-color: transparent;
 $input-shadow: none;
 
+// Import Bulma.
 @import "../node_modules/bulma/bulma.sass";

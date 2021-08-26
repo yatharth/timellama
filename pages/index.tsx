@@ -54,10 +54,10 @@ const Index: NextPage = () => {
                                         </label>
                                     </div>
                                     <div className='level-item'>
-                                        <CopyToClipboard
-                                            text={font.converter(inputText)}
-                                                         onCopy={onCopy}>
-                                            <button className='button is-small' disabled={!inputText}>Copy to Clipboard</button>
+                                        <CopyToClipboard text={font.converter(inputText)} onCopy={onCopy}>
+                                            <button className='button is-small' disabled={!inputText}>
+                                                Copy to Clipboard
+                                            </button>
                                         </CopyToClipboard>
                                     </div>
                                 </div>
