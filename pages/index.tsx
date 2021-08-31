@@ -15,9 +15,6 @@ import {fonts} from "../lib/fonts";
 // - TODO: Consider adding another page, just to see how prefetching and instant navigation works.
 // - TODO: Consider buying the cheapest domain possible? And fronting with Cloudflare, and configuring on Vercel.
 
-// STILL MIGHT DO SOMETIME:
-// - TODO: Update reference to bulma-toast onces my PRs are merged.
-
 // REJECTED FOR MINIMAL ROI
 // - TODO: Link to igfonts.io for more fonts.
 // - TOOD: Link to icanhazcheezburger memes.
