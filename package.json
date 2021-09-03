@@ -1,10 +1,10 @@
 {
-  "name": "icanhazfonts",
+  "name": "timellama",
   "version": "0.1.0",
-  "homepage": "https://icanhazfonts.vercel.app",
+  "homepage": "https://timellama.vercel.app",
   "repository": {
     "type": "git",
-    "url": "git://github.com/yatharth/icanhazfonts.git"
+    "url": "git://github.com/yatharth/timellama.git"
   },
   "author": "Yatharth Agarwal <yatharth999@gmail.com>",
   "private": true,

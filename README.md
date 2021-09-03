@@ -1,7 +1,12 @@
-# icanhazfonts
+# Time Llama
 
-1. Go to [icanhazfonts.vercel.app][website]
-2. Type in what you want
-3. You can now get 𝘪𝘵𝘢𝘭𝘪𝘤𝘴, 𝗯𝗼𝗹𝗱, and other 𝕗𝕒𝕟𝕔𝕪 letters to paste into Twitter, Instagram, and other places.
+Need to convert timezones?
 
-[website]: https://icanhazfonts.vercel.app
+1. Go to [timellama.vercel.app](https://timellama.vercel.app).
+2. Enter your timezones.
+3. Get a friendly llama to show you what 2 pm here is like there.
+
+<!--
+TODO: insert screenshot
+TODO: insert images of llamas
+-->
